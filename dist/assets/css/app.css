@@ -1,0 +1,154 @@
+/* ---------------------------------------------------------------------
+ HTML5 Reset
+ Author: Richard Clark - http://richclarkdesign.com
+------------------------------------------------------------------------ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%; }
+
+ins {
+  text-decoration: none;
+  color: #000;
+  background-color: #ff9; }
+
+mark {
+  color: #000;
+  background-color: #ff9;
+  font-weight: bold;
+  font-style: italic; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted; }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+input, select {
+  vertical-align: middle; }
+
+li {
+  list-style-type: none; }
+
+button {
+  border-radius: 0;
+  outline: none !important;
+  background: none;
+  -webkit-appearance: none; }
+
+img, fieldset, iframe {
+  border: 0; }
+
+input {
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+input::-moz-focus-inner, button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap; }
+
+.logo-pic {
+  padding: 10px;
+  margin-right: 10px;
+  border-right: 2px solid #D9E8F5; }
+
+.group-logo {
+  display: flex;
+  align-items: center; }
+
+.menu-list {
+  display: flex; }
+  .menu-list-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    margin-right: 40px;
+    text-decoration: none;
+    color: #272727;
+    position: relative; }
+  .menu-list-link:hover {
+    color: #2A63A9; }
+    .menu-list-link:hover::after {
+      content: "...";
+      font-size: 30px;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%); }
+
+.mobile {
+  display: flex;
+  align-items: center; }
+  .mobile-link {
+    padding-right: 11px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000; }
+  .mobile-svg {
+    width: 37px;
+    height: 37px;
+    fill: #fff;
+    background-color: #2A63A9;
+    border-radius: 50%;
+    padding: 11px;
+    margin-right: 8px; }
+
+
+
+

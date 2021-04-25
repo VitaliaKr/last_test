@@ -1,0 +1,21 @@
+.header
+    .group-logo
+        a.logo-link(href="#")
+            img.logo-pic(src="../assets/imgs/main-logo.svg", alt="error")
+        a.logo-link(href="#")
+            img(src="../assets/imgs/licence.svg", alt="error")
+    ul.menu-list 
+        mixin item(txt)
+            li.menu-list-item  
+                a.menu-list-link(href="#")=txt
+        +item("Услуги")
+        +item("Бланки")
+        +item("О нас")
+        +item("Контакты")
+    .mobile 
+        a.mobile-link(href="tel:+1 234 5678910") +1 234 5678910
+        svg.mobile-svg 
+            use(xlink:href="../assets/imgs/sprite.svg#skype")
+        svg.mobile-svg 
+            use(xlink:href="../assets/imgs/sprite.svg#wats")
+        

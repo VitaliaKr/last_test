@@ -1,0 +1,77 @@
+// Помощники
+// @import 'mixins/mixins';//миксины scss
+// @import 'main/stylesheet';// шрифты
+// @import 'main/parameters';// переменные
+
+//Общее
+@import 'main/reset'; // сброс стилей для кроссбраузерности
+// @import 'main/common'; // общие стили
+// @import 'main/grid'; // базовая 12ти колоночная сетка для сайта(сделана на основе bootstrap), классы .container/.row/.col-md-6 и т.д.
+
+//Компоненты(все файлы в папке components) -> добавляются автоматически в стили, импортить сюда их не нужно
+
+// дальше можно писать все стили сайта в этот файл, или писать их в компонентах
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.logo-pic{
+    padding: 10px;
+    margin-right: 10px;
+    border-right: 2px solid #D9E8F5;
+}
+.group-logo{
+    display: flex;
+    align-items: center;
+}
+.menu-list{
+    display: flex;
+    &-link{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        margin-right: 40px;
+        text-decoration: none;
+        color: #272727;
+        position: relative;
+    }
+    &-link:hover{
+            color: #2A63A9;
+        &::after{
+            content: "...";
+            font-size: 30px;
+            position: absolute;  
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+        }
+}
+.mobile{
+    display: flex;
+    align-items: center;
+    &-link{
+        padding-right: 11px;
+        text-decoration: none;
+        font-weight: bold;
+font-size: 18px;
+line-height: 150%;
+        color: #000;
+    }
+    &-svg{
+        width: 37px;
+        height: 37px;
+        fill: #fff;
+        background-color: #2A63A9;
+        border-radius: 50%;
+        padding: 11px;
+        margin-right: 8px;
+
+    }
+}
